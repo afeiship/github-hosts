@@ -1,5 +1,7 @@
 # get started
 
+## api.dev
+- https://swapi.dev/documentation
 
 # react query
 - https://www.youtube.com/watch?v=x1rQ61otgtU
