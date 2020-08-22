@@ -9,6 +9,8 @@ const fetchItems = async (key, page) => {
 const People = () => {
   const [page, setPage] = useState(82);
   const { status, resolvedData, latestData } = usePaginatedQuery(['items', page], fetchItems);
+
+  console.log(resolvedData, latestData);
   return (
     <>
       <h1>People</h1>
@@ -22,16 +24,15 @@ const People = () => {
       </button>
       <span> {page}</span>
       <button
-        onClick={(e) => {
-          setPage((old) => {
-            console.log('latestData:::', latestData);
-            return !latestData || !resolvedData.name ? old : old + 1;
-          });
+        onClick={() => {
+          // this is not the pagination data, so failed.
+          console.log('latest data:::', latestData);
+          setPage((old) => (!latestData.name ? old : old + 1));
         }}>
         Next
       </button>
       {status === 'loading' && <div> loading...</div>}
-      {status === 'success' && <div> {JSON.stringify(resolvedData)}</div>}
+      {status === 'success' && <div> {JSON.stringify(latestData)}</div>}
     </>
   );
 };

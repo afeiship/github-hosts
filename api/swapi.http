@@ -1,1 +1,9 @@
+### get planets
 GET http://swapi.dev/api/planets/60/
+
+
+### get films
+GET https://swapi.dev/api/films
+
+### get film
+GET https://swapi.dev/api/films/1/
