@@ -2,6 +2,7 @@
 
 ## api.dev
 - https://swapi.dev/documentation
+- https://react-query.tanstack.com/docs/guides/query-retries
 
 # react query
 - https://www.youtube.com/watch?v=x1rQ61otgtU
