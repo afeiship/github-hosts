@@ -12,6 +12,7 @@
     "react-query-devtools": "^2.4.4",
     "react-scripts": "3.4.3"
   },
+  "proxy": "http://localhost:3000",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

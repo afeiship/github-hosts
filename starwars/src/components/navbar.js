@@ -5,6 +5,7 @@ const Navbar = ({ setPage }) => {
     <nav>
       <button onClick={(e) => setPage('plants')}>Plants</button>
       <button onClick={(e) => setPage('people')}>People</button>
+      <button onClick={(e) => setPage('posts')}>Posts</button>
     </nav>
   );
 };

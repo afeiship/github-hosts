@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useQuery, usePaginatedQuery } from 'react-query';
+import { usePaginatedQuery } from 'react-query';
 
 const fetchItems = async (key, page) => {
   const res = await fetch(`http://swapi.dev/api/people/${page}`);

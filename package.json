@@ -8,7 +8,8 @@
     "email": "1290657123@qq.com"
   },
   "scripts": {
-    "cms:start": "cd cms-rails && rails s"
+    "backend:start": "cd cms-rails && rails s",
+    "frontend:start": "cd starwars && PORT=3002 npm run start --port"
   },
   "license": "MIT",
   "publishConfig": {

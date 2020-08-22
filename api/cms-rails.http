@@ -1,12 +1,16 @@
 ### index posts
-GET http://localhost:3000/posts
+GET http://localhost:3000/api/posts
 
 ### show posts/1
 GET http://localhost:3000/posts/1
 
 
 ### create
-POST http://localhost:3000/posts
+POST http://localhost:3000/api/posts
 Content-Type: application/json
 
 { "title": "post", "content": "content" }
+
+### destroy
+DELETE http://localhost:3000/api/posts/2
+Content-Type: application/json
