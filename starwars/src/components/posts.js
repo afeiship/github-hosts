@@ -10,10 +10,15 @@ const destroyItem = async ({ id }) => {
   await fetch(`/api/posts/${id}`, { method: 'DELETE' });
 };
 
+queryCache.subscribe((cache) => {
+  // console.log('cache:', cache);
+});
+
 const Posts = (props) => {
   const { data, isSuccess, isError } = useQuery(['posts'], fetchItems);
   const [mutate, info] = useMutation(destroyItem, {
     onSuccess: (res) => {
+      // 让对应 key 的缓存失效
       queryCache.invalidateQueries(['posts']);
     }
   });
@@ -34,9 +39,7 @@ const Posts = (props) => {
             <button
               onClick={(e) => {
                 console.log('destroy');
-                mutate({
-                  id: item.id
-                });
+                mutate({ id: item.id });
               }}>
               Destroy
             </button>
