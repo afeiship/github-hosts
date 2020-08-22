@@ -16,7 +16,7 @@ queryCache.subscribe((cache) => {
 
 const Posts = (props) => {
   const { data, isSuccess, isError } = useQuery(['posts'], fetchItems);
-  const [mutate, info] = useMutation(destroyItem, {
+  const [mutate] = useMutation(destroyItem, {
     onSuccess: (res) => {
       // 让对应 key 的缓存失效
       queryCache.invalidateQueries(['posts']);
