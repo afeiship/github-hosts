@@ -8,10 +8,13 @@ src
 build
 gulpfile.js
 
-
 .editorconfig
 .prettierrc
-
-# vscode
-.vscode
-.history
+.prettierignore
+.release-it.json
+typedoc.js
+tsconfig.json
+jest.config.js
+babel.config.js
+yarn-error.log
+yarn.lock
