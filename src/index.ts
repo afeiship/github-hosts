@@ -1,3 +1,5 @@
+import nx from '@jswork/next';
+
 declare var wx: any;
 
 // https://github.com/Seb-L/pinia-plugin-persist
@@ -31,7 +33,15 @@ const PiniaPluginPersist = (inContext) => {
     const targets = targetEvents.filter((event) => keys.includes(event.key));
     targets.forEach((target) => {
       const storeKey = `${id}.${target.key}`;
-      storage.set(storeKey, target.newValue);
+      const value = target.newValue;
+      storage.set(storeKey, value);
+      if (persist.omitnil) {
+        if (value === null || value === undefined) {
+          const cache = storage.get(id);
+          nx.del(cache, target.key);
+          storage.set(id, cache);
+        }
+      }
     });
   });
 };
