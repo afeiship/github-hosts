@@ -1,6 +1,6 @@
 {
   "name": "@jswork/pinia-plugin-persist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Persist pinia state data storages.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -51,5 +51,14 @@
       ],
       "@babel/preset-typescript"
     ]
-  }
+  },
+  "keywords": [
+    "local",
+    "persist",
+    "pinia",
+    "session",
+    "state",
+    "storage",
+    "store"
+  ]
 }
