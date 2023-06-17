@@ -1,6 +1,6 @@
 {
   "name": "@jswork/pinia-plugin-persist",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Persist pinia state data storages.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
