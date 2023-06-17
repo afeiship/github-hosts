@@ -26,7 +26,7 @@ const PiniaPluginPersist = (inContext) => {
   }
 
   store.$subscribe((mutation) => {
-    const events = mutation.events;
+    const events = mutation.events || [];
     const targetEvents = Array.isArray(events) ? events : [events];
     const targets = targetEvents.filter((event) => keys.includes(event.key));
     targets.forEach((target) => {
