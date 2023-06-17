@@ -8,11 +8,22 @@ const PiniaPluginPersist = (inContext) => {
   const { app, store, options } = inContext;
   const { $storage, persist } = options;
   const storage = $storage || app.$storage;
+
+  // pre check
   if (!storage) throw new Error(MSG_NO_STORAGE);
-  if (!persist) return;
+  if (!persist || persist.disaled) return;
 
   const keys = persist.keys || [];
   const id = store.$id;
+
+  // init
+  if (!persist.skipInit) {
+    keys.forEach((key) => {
+      const cacheKey = `${id}.${key}`;
+      const value = storage.get(cacheKey);
+      if (value) store.$patch({ [key]: value });
+    });
+  }
 
   store.$subscribe((mutation) => {
     const events = mutation.events;
