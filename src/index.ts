@@ -11,7 +11,7 @@ const PiniaPluginPersist = (inContext) => {
 
   // pre check
   if (!storage) throw new Error(MSG_NO_STORAGE);
-  if (!persist || persist.disaled) return;
+  if (!persist || persist.disabled) return;
 
   const keys = persist.keys || [];
   const id = store.$id;
