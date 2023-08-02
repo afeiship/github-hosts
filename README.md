@@ -7,6 +7,9 @@
 git clone git@github.com:afeiship/github-hosts.git
 yarn
 
+# task:init(maybe you need later)
+yarn run task:init
+
 # run & get results from clipboard
 yarn build && yarn start
 ```
