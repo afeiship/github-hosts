@@ -23,10 +23,11 @@ class App {
     const content = this.buildHosts(results);
     clipboardy.writeSync(content);
     console.log('🚀 hosts copied to clipboard!');
+    console.log('🍒 result:\n', content, '\n');
   }
 
   public static buildHosts(inReulsts) {
-    const hosts: string[] = [];
+    const hosts: string[] = ['\n# github hosts\n'];
     for (const item of inReulsts) {
       hosts.push(`${item.ip}      ${item.domain}`);
     }
