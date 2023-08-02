@@ -3,7 +3,12 @@
 
 ## get-started
 ```shell
-npm run start -- --hello=world
+# install
+git clone git@github.com:afeiship/github-hosts.git
+yarn
+
+# run & get results from clipboard
+yarn build && yarn start
 ```
 
 ```conf
