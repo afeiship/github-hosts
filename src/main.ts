@@ -1,6 +1,7 @@
 import '@/setup';
 import dnsResolver from '@jswork/dns-resolver';
 import clipboardy from 'clipboardy';
+import dayjs from 'dayjs';;
 
 const GH_DOMAINS = [
   'github.com',
@@ -27,7 +28,8 @@ class App {
   }
 
   public static buildHosts(inReulsts) {
-    const hosts: string[] = ['\n# github hosts\n'];
+    const now = dayjs().format('YYYY-MM-DD HH:mm:ss');
+    const hosts: string[] = ['\n# github hosts', `# datetime: ${now}\n`];
     for (const item of inReulsts) {
       hosts.push(`${item.ip}      ${item.domain}`);
     }
