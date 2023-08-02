@@ -34,10 +34,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@jswork/dns-resolver@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.npmmirror.com/@jswork/dns-resolver/-/dns-resolver-1.0.2.tgz#c7eea4e6652f75d51076675c0190fed2a230bbd2"
-  integrity sha512-DMnBhWRXOtytW5vJdyVzvva+TqaDzQMQEzQNTCVjC1x/7ec+Wl4XypbF8AevAQmX9/xXpQiKDCM4Z+JrVgyKqQ==
+"@jswork/dns-resolver@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/@jswork/dns-resolver/-/dns-resolver-1.0.3.tgz#56ec3d175c301c489d7791bf340a1972aa9b4cca"
+  integrity sha512-qIA02/tugX16op6FVD3HimYGR7XnEPKICJy1LkMEpNnIKvvoTQWGE4BZcJA0dyyQmxM9WRqYaTCmXMeFu5uYmQ==
   dependencies:
     cheerio "^1.0.0-rc.12"
     node-fetch "2.6.7"
@@ -93,9 +93,9 @@
   dependencies:
     "@jswork/next-is-plain-object" "^1.0.4"
 
-"@jswork/next-require@^1.0.4":
+"@jswork/next-require@^1.0.5":
   version "1.0.5"
-  resolved "https://registry.npmmirror.com/@jswork/next-require/-/next-require-1.0.5.tgz#6d5a7e4a8c5d974bedca2687aa2b572cbaa84add"
+  resolved "https://registry.npmjs.org/@jswork/next-require/-/next-require-1.0.5.tgz#6d5a7e4a8c5d974bedca2687aa2b572cbaa84add"
   integrity sha512-KhM91lYcbh/nhIif+M+1R1v2Bq+V/iXdz0PGgAHt9eIUm66Z24n5jgrDnissrz0cmEufdMu1gVv8D3n3XTJP4w==
   dependencies:
     "@jswork/next-arrayify" "^1.0.0"
@@ -111,9 +111,9 @@
   resolved "https://registry.npmmirror.com/@jswork/next-secret-tmpl/-/next-secret-tmpl-1.0.1.tgz#9dd45f32f114e317c52c7a2e454f8e40b83b7499"
   integrity sha512-oInsIj6cR5ZI1ayHcf2X1PaXgJTlbjA9pdQE2z25FMoTA144gzPxJm8VTysrWNVgFqXuxaILa284W5uQGnPiDg==
 
-"@jswork/next-sets@^1.0.3":
+"@jswork/next-sets@^1.0.5":
   version "1.0.5"
-  resolved "https://registry.npmmirror.com/@jswork/next-sets/-/next-sets-1.0.5.tgz#f87ed421c4f8568d1c7265354e06cf4b6d290fad"
+  resolved "https://registry.npmjs.org/@jswork/next-sets/-/next-sets-1.0.5.tgz#f87ed421c4f8568d1c7265354e06cf4b6d290fad"
   integrity sha512-u+YtuFG1hxIVT5VJCyNmR6z5wYtHPk1X18u90RgoxBZ5HJYqwJU0A4O8+YN8Pvlejz9dlul/lDtqCFGeKcIAjQ==
 
 "@jswork/next-yaml-configuration@^1.0.3":
@@ -125,9 +125,9 @@
     "@jswork/next-deep-assign" "^1.0.2"
     js-yaml "^3.14.0"
 
-"@jswork/next@^1.1.5":
+"@jswork/next@^1.1.11":
   version "1.1.11"
-  resolved "https://registry.npmmirror.com/@jswork/next/-/next-1.1.11.tgz#d952adec1cfa67f4d8e674305d4eb4fda4039d7e"
+  resolved "https://registry.npmjs.org/@jswork/next/-/next-1.1.11.tgz#d952adec1cfa67f4d8e674305d4eb4fda4039d7e"
   integrity sha512-n0IUO+2msxTO4a25ClHVSpRZbtlIeInB/ujoil5HBcG3ZavFlBegdouzr0dEuCYTGMfvpImLqylmQ26RgX9odw==
 
 "@mole-inc/bin-wrapper@^8.0.1":
