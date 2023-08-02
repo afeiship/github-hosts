@@ -1,17 +1,42 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "strict": true,
-    "skipLibCheck": true,
+    "target": "es2020",
+    "module": "es2020",
+    "allowJs": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
     "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016",
+      "es2017",
+      "es2018.promise",
+      "es2020"
+    ],
+    "noImplicitAny": false,
     "forceConsistentCasingInFileNames": true,
-    "pretty": true,
     "esModuleInterop": true,
-    "skipDefaultLibCheck": true,
-    "moduleResolution": "node",
-    "noImplicitAny": false
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": [
-    "src"
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
